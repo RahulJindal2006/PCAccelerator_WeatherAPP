@@ -25,7 +25,7 @@ MongoClient.connect(DB_URL, { useNewUrlParser: true, useUnifiedTopology: true })
 // Middleware
 app.use(express.json());  // To parse JSON requests
 app.use(cors({
-  origin: 'http://localhost:5174'  // Allow only the frontend running on this domain
+  origin: 'http://localhost:5173'  // Allow only the frontend running on this domain
 }));
 
 // CREATE: Store weather data in MongoDB
